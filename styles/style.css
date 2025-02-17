@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*:root {
+    --color-primario: #2C3930;
+    --color-secundario: #3F4F44;
+    --color-terciario: #DCD7C9;
+    --fuente-montserrat: 'Montserrat', san serif;
+    --fuente-krona: 'krona one', san serif;
+    --color-hover:#DCD7C9;  
+   
+}   */
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+    --fuente-montserrat: 'Montserrat', san serif;
+    --fuente-krona: 'krona one', san serif;
+    --color-hover:#272727;
+
+}   
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.oneH1 {
+    font-family: 'Tangerine', serif;
+    font-size: 4.25rem;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+    border: 2px solid #22D4FD;
+    padding: 2%;
+}
+
+body {
+    /* esto es para que el paddin no se sume al ancho ni alto*/
+    box-sizing: border-box;
+    background-color:var(--color-primario) ;
+    color:var(--color-secundario);
+    /* height: 100vh;
+     esto es para que el body ocupe el 100% de la pantalla pero se retira*/
+
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+    /* ARRIBA - DERECHA - ABAJO - IZQUIERDA*/
+    border: 2px solid #22D4FD;
+}
+
+/* NAV*/
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family:var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--color-terciario);
+    text-decoration: none;
+}
+
+/* este espacio es del main */
+.presentacion {
+    /* ARRIBA - DERECHA - ABAJO - IZQUIERDA*/
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    /*margin: 10% 15%;*/
+    justify-content: space-between;
+    gap: 82px; ;
+}
+
+.presentacion__contenido {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.25rem;
+    font-family:var(--fuente-krona);
+}
+
+.titulo__destaque {
+    color:var(--color-terciario);
+}
+
+.presentacion__contenido__texto {
+    font-family:var(--fuente-montserrat);
+    font-size: 1.5rem;
+    /*width: 615px;
+    height: 482px;  Esto se creo a pedido del desafio */
+}
+
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-family:var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+    display: flex;
+    /*paso 1*/
+    justify-content: center;
+    /*paso 2*/
+    gap: 10px;
+    /*paso 3*/
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--color-secundario);
+    font-family:var(--fuente-montserrat);
+    text-shadow: 4px 4px 4px #4bc932;
+    border: 2px solid var(--color-terciario);
+    
+}
+
+.presentacion__enlaces__link:hover {
+    background-color:var(--color-hover);
+}
+.presentacion__imagen{
+    width: 50%;
+}
+
+.footer {
+    background-color:var(--color-terciario);
+    padding: 24px;
+    ;
+    color:var(--color-primario);
+    text-align: center;
+    font-family:var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media(max-width:1200px) {
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+        
+    }
+    .presentacion{
+        flex-direction:column-reverse;
+        padding:5%;
+    }
+    .presentacion__contenido{
+        width:auto;
+    }
+}
