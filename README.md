@@ -11,3 +11,5 @@
 ## Hecho por:
 
 ### L.Paz
+Puedes verlo en la web con esta URL:
+https://portafolio-chi-six-58.vercel.app/index.html
